@@ -14,3 +14,10 @@ Fonte: Material.io
 [botões com cantos chanfrados](https://lh3.googleusercontent.com/kJvyrvUbUL5LBggF9JnqED-YQ_OfDoVp5gjWdeqV11DrpN7k3Rv4LgF3mTE4SfSPBnnZqU3dHObr8CiC7DP4hnGndO83o2-nhKeTcw=w1064-v0)
 
 As outras duas dificuldades que estão unificadas nesse artigo, são a de animações e de arquitetura.
+
+## Desafio
+
+Repensar uma página web ao invés da tradicional rolagem de conteúdo, agora com camadas, sobreposições e interações muito mobile. Esse estudo não visa atender e resolver toda demanda referente a interações usadas no celular e sim trazer uma tradução para a web visando suas limitações e evitar assim um esforço excessivo e erros ocasionados por usar a Web de uma forma que ela não dê suporte.
+
+![image](https://user-images.githubusercontent.com/27368585/126732377-f3e9a450-04a9-4b25-9393-6c70bfee9d2d.png)
+
