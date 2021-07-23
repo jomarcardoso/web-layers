@@ -19,5 +19,6 @@ As outras duas dificuldades que estão unificadas nesse artigo, são a de anima�
 
 Repensar uma página web ao invés da tradicional rolagem de conteúdo, agora com camadas, sobreposições e interações muito mobile. Esse estudo não visa atender e resolver toda demanda referente a interações usadas no celular e sim trazer uma tradução para a web visando suas limitações e evitar assim um esforço excessivo e erros ocasionados por usar a Web de uma forma que ela não dê suporte.
 
-![image](https://user-images.githubusercontent.com/27368585/126732377-f3e9a450-04a9-4b25-9393-6c70bfee9d2d.png)
+![image](https://user-images.githubusercontent.com/27368585/126732419-b6891926-28d3-4f60-943b-11bda47e66f9.png)
+
 
