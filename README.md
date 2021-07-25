@@ -12,7 +12,7 @@ As camadas são elementos que podem ser sobrepostos e ainda manter a área de to
 
 ### Gatilhos em camadas
 
-Quando uma está se posicionando na tela, é possível criar uns gatilhos baseados em sua posição. O conceito de [Scrollspy](https://github.com/jomarcardoso/ovos/tree/master/src/interface/scroll-spy) pode ser usado aqui. 
+Quando uma está se posicionando na tela, é possível criar uns gatilhos baseados em sua posição. O conceito de [Scrollspy](https://github.com/jomarcardoso/ovos/tree/master/src/interface/scroll-spy) pode ser usado aqui.
 
 ## Painéis
 
