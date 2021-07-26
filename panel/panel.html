@@ -44,6 +44,69 @@
     .logo {
       font-family: cursive;
     }
+
+    .talk {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+    }
+
+    .talk-avatar {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 30px;
+    }
+
+    .talk-description {
+      flex: 1;
+      margin-left: 20px;
+    }
+
+    .talk-camera {
+      font-size: 24px;
+    }
+
+    .talk-online {
+      font-size: 12px;
+    }
+
+    .post {
+      margin-bottom: 30px;
+    }
+
+    .post-name {
+      font-weight: bold;
+    }
+
+    .post-name,
+    .post-from {
+      font-size: 12px;
+    }
+
+    .post-description {
+      flex: 1;
+      margin-left: 10px;
+    }
+
+    .post-image {
+      font-size: 100px;
+      display: flex;
+      justify-content: center;
+      padding: 50px;
+    }
+
+    .post .talk {
+      margin-bottom: 10px;
+    }
+
+    .post-actions {
+      display: flex;
+      gap: 10px;
+    }
   </style>
 </head>
 
@@ -55,25 +118,118 @@
         <div class="container">
           <i class="bi bi-camera"></i>
           <span class="logo fs-2">Motiongran</span>
-          <i class="bi bi-chat-dots"></i>
+          <a href="#chat">
+            <i class="bi bi-chat-dots"></i>
+          </a>
         </div>
       </header>
       <div class="panel__content p-3">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-          porro
-          vel distinctio nisi tempore facere laudantium voluptatum soluta et
-          eveniet
-          ad accusantium nobis suscipit dolore debitis nihil, voluptas officiis
-          fugit?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-          porro
-          vel distinctio nisi tempore facere laudantium voluptatum soluta et
-          eveniet
-          ad accusantium nobis suscipit dolore debitis nihil, voluptas officiis
-          fugit?</p>
+
+        <div class="post">
+          <div class="talk">
+            <div class="talk-avatar bg-light border text-secondary">
+              <i class="bi bi-person-fill"></i>
+            </div>
+            <div class="post-description">
+              <div class="post-name">Fulano</div>
+              <div class="post-from">São Paulo</div>
+            </div>
+          </div>
+          <div
+            class="border border-dark mb-3 border-start-0 border-end-0 post-image text-secondary bg-light">
+            <i class="bi bi-image"></i>
+          </div>
+          <div class="fs-5 post-actions">
+            <i class="bi bi-heart"></i>
+            <i class="bi bi-chat"></i>
+            <i class="bi bi-share"></i>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="talk">
+            <div class="talk-avatar bg-light border text-secondary">
+              <i class="bi bi-person-fill"></i>
+            </div>
+            <div class="post-description">
+              <div class="post-name">Fulano</div>
+              <div class="post-from">São Paulo</div>
+            </div>
+          </div>
+          <div
+            class="border border-dark mb-3 border-start-0 border-end-0 post-image text-secondary bg-light">
+            <i class="bi bi-image"></i>
+          </div>
+          <div class="fs-5 post-actions">
+            <i class="bi bi-heart"></i>
+            <i class="bi bi-chat"></i>
+            <i class="bi bi-share"></i>
+          </div>
+        </div>
+        <div class="post">
+          <div class="talk">
+            <div class="talk-avatar bg-light border text-secondary">
+              <i class="bi bi-person-fill"></i>
+            </div>
+            <div class="post-description">
+              <div class="post-name">Fulano</div>
+              <div class="post-from">São Paulo</div>
+            </div>
+          </div>
+          <div
+            class="border border-dark mb-3 border-start-0 border-end-0 post-image text-secondary bg-light">
+            <i class="bi bi-image"></i>
+          </div>
+          <div class="fs-5 post-actions">
+            <i class="bi bi-heart"></i>
+            <i class="bi bi-chat"></i>
+            <i class="bi bi-share"></i>
+          </div>
+        </div>
+        <div class="post">
+          <div class="talk">
+            <div class="talk-avatar bg-light border text-secondary">
+              <i class="bi bi-person-fill"></i>
+            </div>
+            <div class="post-description">
+              <div class="post-name">Fulano</div>
+              <div class="post-from">São Paulo</div>
+            </div>
+          </div>
+          <div
+            class="border border-dark mb-3 border-start-0 border-end-0 post-image text-secondary bg-light">
+            <i class="bi bi-image"></i>
+          </div>
+          <div class="fs-5 post-actions">
+            <i class="bi bi-heart"></i>
+            <i class="bi bi-chat"></i>
+            <i class="bi bi-share"></i>
+          </div>
+        </div>
+        <div class="post">
+          <div class="talk">
+            <div class="talk-avatar bg-light border text-secondary">
+              <i class="bi bi-person-fill"></i>
+            </div>
+            <div class="post-description">
+              <div class="post-name">Fulano</div>
+              <div class="post-from">São Paulo</div>
+            </div>
+          </div>
+          <div
+            class="border border-dark mb-3 border-start-0 border-end-0 post-image text-secondary bg-light">
+            <i class="bi bi-image"></i>
+          </div>
+          <div class="fs-5 post-actions">
+            <i class="bi bi-heart"></i>
+            <i class="bi bi-chat"></i>
+            <i class="bi bi-share"></i>
+          </div>
+        </div>
+
       </div>
       <footer
-        class="navbar navbar-light bg-light border border-bottom-0 border-left-0 border-right-0 fs-1">
+        class="navbar navbar-light bg-light border border-bottom-0 border-left-0 border-right-0 fs-2">
         <div class="container">
           <a href="#home"><i class="bi bi-house-door-fill"></i></a>
           <a href="#home"><i class="bi bi-bookmark-plus"></i></a>
@@ -83,11 +239,13 @@
         </div>
       </footer>
     </div>
-    <div id="tools" class="panel h-100">
+    <div id="chat" class="panel h-100">
       <header
         class="navbar navbar-light bg-light border border-top-0 border-left-0 border-right-0 fs-1">
         <div class="container">
-          <i class="bi bi-arrow-left"></i>
+          <a href="#home">
+            <i class="bi bi-arrow-left"></i>
+          </a>
           <span class="fs-2">Your chat</span>
         </div>
       </header>
@@ -100,16 +258,154 @@
         </div>
       </ul>
       <div class="panel__content p-3">
-        <div class="mb-3">
+        <div class="mb-4">
           <input type="text" class="form-control" placeholder="Pesquisar"
             readonly>
         </div>
-        <h1>tools</h1>
-        <button class="btn btn-primary">tool 1</button>
-        <hr>
-        <button class="btn btn-primary">tool 2</button>
-        <hr>
-        <button class="btn btn-primary">tool 3</button>
+        <div class="talk">
+          <div class="talk-avatar bg-light border text-secondary">
+            <i class="bi bi-person-fill"></i>
+          </div>
+          <div class="talk-description">
+            <div class="talk-name">Fulano</div>
+            <div class="talk-online text-secondary">Online a x horas</div>
+          </div>
+          <div class="talk-camera text-secondary">
+            <i class="bi bi-camera"></i>
+          </div>
+        </div>
+        <div class="talk">
+          <div class="talk-avatar bg-light border text-secondary">
+            <i class="bi bi-person-fill"></i>
+          </div>
+          <div class="talk-description">
+            <div class="talk-name">Fulano</div>
+            <div class="talk-online text-secondary">Online a x horas</div>
+          </div>
+          <div class="talk-camera text-secondary">
+            <i class="bi bi-camera"></i>
+          </div>
+        </div>
+        <div class="talk">
+          <div class="talk-avatar bg-light border text-secondary">
+            <i class="bi bi-person-fill"></i>
+          </div>
+          <div class="talk-description">
+            <div class="talk-name">Fulano</div>
+            <div class="talk-online text-secondary">Online a x horas</div>
+          </div>
+          <div class="talk-camera text-secondary">
+            <i class="bi bi-camera"></i>
+          </div>
+        </div>
+        <div class="talk">
+          <div class="talk-avatar bg-light border text-secondary">
+            <i class="bi bi-person-fill"></i>
+          </div>
+          <div class="talk-description">
+            <div class="talk-name">Fulano</div>
+            <div class="talk-online text-secondary">Online a x horas</div>
+          </div>
+          <div class="talk-camera text-secondary">
+            <i class="bi bi-camera"></i>
+          </div>
+        </div>
+        <div class="talk">
+          <div class="talk-avatar bg-light border text-secondary">
+            <i class="bi bi-person-fill"></i>
+          </div>
+          <div class="talk-description">
+            <div class="talk-name">Fulano</div>
+            <div class="talk-online text-secondary">Online a x horas</div>
+          </div>
+          <div class="talk-camera text-secondary">
+            <i class="bi bi-camera"></i>
+          </div>
+        </div>
+        <div class="talk">
+          <div class="talk-avatar bg-light border text-secondary">
+            <i class="bi bi-person-fill"></i>
+          </div>
+          <div class="talk-description">
+            <div class="talk-name">Fulano</div>
+            <div class="talk-online text-secondary">Online a x horas</div>
+          </div>
+          <div class="talk-camera text-secondary">
+            <i class="bi bi-camera"></i>
+          </div>
+        </div>
+        <div class="talk">
+          <div class="talk-avatar bg-light border text-secondary">
+            <i class="bi bi-person-fill"></i>
+          </div>
+          <div class="talk-description">
+            <div class="talk-name">Fulano</div>
+            <div class="talk-online text-secondary">Online a x horas</div>
+          </div>
+          <div class="talk-camera text-secondary">
+            <i class="bi bi-camera"></i>
+          </div>
+        </div>
+        <div class="talk">
+          <div class="talk-avatar bg-light border text-secondary">
+            <i class="bi bi-person-fill"></i>
+          </div>
+          <div class="talk-description">
+            <div class="talk-name">Fulano</div>
+            <div class="talk-online text-secondary">Online a x horas</div>
+          </div>
+          <div class="talk-camera text-secondary">
+            <i class="bi bi-camera"></i>
+          </div>
+        </div>
+        <div class="talk">
+          <div class="talk-avatar bg-light border text-secondary">
+            <i class="bi bi-person-fill"></i>
+          </div>
+          <div class="talk-description">
+            <div class="talk-name">Fulano</div>
+            <div class="talk-online text-secondary">Online a x horas</div>
+          </div>
+          <div class="talk-camera text-secondary">
+            <i class="bi bi-camera"></i>
+          </div>
+        </div>
+        <div class="talk">
+          <div class="talk-avatar bg-light border text-secondary">
+            <i class="bi bi-person-fill"></i>
+          </div>
+          <div class="talk-description">
+            <div class="talk-name">Fulano</div>
+            <div class="talk-online text-secondary">Online a x horas</div>
+          </div>
+          <div class="talk-camera text-secondary">
+            <i class="bi bi-camera"></i>
+          </div>
+        </div>
+        <div class="talk">
+          <div class="talk-avatar bg-light border text-secondary">
+            <i class="bi bi-person-fill"></i>
+          </div>
+          <div class="talk-description">
+            <div class="talk-name">Fulano</div>
+            <div class="talk-online text-secondary">Online a x horas</div>
+          </div>
+          <div class="talk-camera text-secondary">
+            <i class="bi bi-camera"></i>
+          </div>
+        </div>
+        <div class="talk">
+          <div class="talk-avatar bg-light border text-secondary">
+            <i class="bi bi-person-fill"></i>
+          </div>
+          <div class="talk-description">
+            <div class="talk-name">Fulano</div>
+            <div class="talk-online text-secondary">Online a x horas</div>
+          </div>
+          <div class="talk-camera text-secondary">
+            <i class="bi bi-camera"></i>
+          </div>
+        </div>
       </div>
     </div>
   </div>
