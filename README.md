@@ -4,6 +4,12 @@
 
 Grandes empresas, que possuem seus produtos multi plataforma, criam produtos diferentes em cada um, isso por causa das limitações e da forma padrão como cada uma funciona. Esse projeto visa explorar todos os recursos da web, para que reduzir suas limitações e criar um padrão.
 
+## Não existe
+
+Um elemento flutuante em qualquer lugar da tela se transportar até um lugar específico e passar a ser fixo. Na Web existe apenas o position sticky, que funciona dentro de uma rolagem e quano chega no limite do elemento em que ele é relativo passa a ser flutuate, porém o elemento não fica em qualquer lugar da ela, nem é transportado até um lugar específico.
+
+O conteúdo de um elemento virar outro. Essas transformações mostradas no Material Design que um botão vira um menu ou uma nova tela não existe. Na Web teria que ser feito uma troca do conteúdo e de alguma forma disfarçar essa transição.
+
 ## Proibido
 
 Permitir parar pela metade uma animação de um conteúdo a ser lido.
