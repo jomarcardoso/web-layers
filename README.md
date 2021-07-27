@@ -4,6 +4,12 @@
 
 Grandes empresas, que possuem seus produtos multi plataforma, criam produtos diferentes em cada um, isso por causa das limitações e da forma padrão como cada uma funciona. Esse projeto visa explorar todos os recursos da web, para que reduzir suas limitações e criar um padrão.
 
+## Proibido
+
+Permitir parar pela metade uma animação de um conteúdo a ser lido.
+
+Uso excessivo do [will-change](https://developer.mozilla.org/pt-BR/docs/Web/CSS/will-change) como solução para o uso de propriedades que recalculam a página, como `padding`, `top`, `left`... Pois além de não resolver deixa a página mais pesada e com mais uso de memória.
+
 ## Expressivo X Produtivo
 
 A curva padrão é quando um elemento está visível do começo ao fim da animação.
