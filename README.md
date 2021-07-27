@@ -4,6 +4,15 @@
 
 Grandes empresas, que possuem seus produtos multi plataforma, criam produtos diferentes em cada um, isso por causa das limitações e da forma padrão como cada uma funciona. Esse projeto visa explorar todos os recursos da web, para que reduzir suas limitações e criar um padrão.
 
+## Expressivo X Produtivo
+
+### Motion Carbon
+
+```css
+--standard-easing-productive: cubic-bezier(0.2, 0, 0.38, 0.9);
+--standard-easing-expressive: cubic-bezier(0.4, 0.14, 0.3, 1);
+```
+
 ## Camadas
 
 As camadas são elementos que podem ser sobrepostos e ainda manter a área de toque das camadas anteriores.
@@ -92,3 +101,10 @@ A troca do conteúdo ser feita com fade out e fade in. O efeito precisa tanto de
 No meio da transição, com a opacidade zero trocar o conteúdo.
 
 Evitar mudar o formato da forma, apenas o conteúdo.
+
+## Referências
+
+- https://angular.io/guide/animations
+- https://material.io/design/motion/understanding-motion.html#principles
+- https://material.io/design/shape/shape-motion.html#morphing-shape
+- https://www.carbondesignsystem.com/guidelines/motion/overview/
