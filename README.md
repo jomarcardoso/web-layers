@@ -14,21 +14,37 @@ A curva de entrada é quando ele aparece na tela e de saída quando sai da tela.
 
 ```css
 :root {
-  --standard-easing-productive: cubic-bezier(0.2, 0, 0.38, 0.9);
-  --standard-easing-expressive: cubic-bezier(0.4, 0.14, 0.3, 1);
+  --easing-standard-productive: cubic-bezier(0.2, 0, 0.38, 0.9);
+  --easing-standard-expressive: cubic-bezier(0.4, 0.14, 0.3, 1);
 
-  --entrance-easing-productive: cubic-bezier(0, 0, 0.38, 0.9);
-  --entrance-easing-expressive: cubic-bezier(0, 0, 0.3, 1);
+  --easing-entrance-productive: cubic-bezier(0, 0, 0.38, 0.9);
+  --easing-entrance-expressive: cubic-bezier(0, 0, 0.3, 1);
 
-  --exit-easing-productive: cubic-bezier(0.2, 0, 1, 0.9);
-  --exit-easing-expressive: cubic-bezier(0.4, 0.14, 1, 1);
+  --easing-exit-productive: cubic-bezier(0.2, 0, 1, 0.9);
+  --easing-exit-expressive: cubic-bezier(0.4, 0.14, 1, 1);
 
   --duration--fast-01: 70ms;	/* Micro-interactions such as button and toggle */
-  --duration--fast-02:	110ms;	/* Micro-interactions such as fade */
-  --duration--moderate-01:	150ms;	/* Micro-interactions, small expansion, short distance movements */
-  --duration--moderate-02:	240ms;	/* Expansion, system communication, toast */
-  --duration--slow-01:	400ms; /* Large expansion, important system notifications */
-  --duration--slow-02:	700ms; /* Background dimming */
+  --duration--fast-02: 110ms;	/* Micro-interactions such as fade */
+  --duration--moderate-01: 150ms;	/* Micro-interactions, small expansion, short distance movements */
+  --duration--moderate-02: 240ms;	/* Expansion, system communication, toast */
+  --duration--slow-01: 400ms; /* Large expansion, important system notifications */
+  --duration--slow-02: 700ms; /* Background dimming */
+}
+```
+
+### Material Design
+
+```css
+:root {
+  --easing-standard: cubic-bezier(0.4, 0.0, 0.2, 1);
+  --easing-desacelerated: cubic-bezier(0.0, 0.0, 0.2, 1);
+  --easing-accelerated: cubic-bezier(0.4, 0.0, 1, 1);
+  
+  --duration-open: 250ms; /* or expand */
+  --duration-close: 200ms; /* or collapse */
+  --duration-open-large: 300ms;
+  --duration-close-large: 250ms;
+  --duration-switch: 100ms;
 }
 ```
 
