@@ -34,6 +34,13 @@
       scroll-snap-align: start;
       scroll-snap-stop: always;
       position: relative;
+      transition: 300ms ease;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+
+    .layer__menu:target {
+      border-radius: 0;
     }
 
     .layer__menu--out {

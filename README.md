@@ -23,3 +23,62 @@ Painéis são elementos que ocupam a tela toda.
 ### Painéis de rolagem com paralaxe
 
 ### Painéis de sobreposição
+
+## Placeholders
+
+## Animações de entrada e saída
+
+Para não mostrar o conteúdo se formando pode-se usar um loader e renderizar o conteúdo, após isso fazer o efeito de fade com um translate em todos os elementos.
+
+Referências:
+
+- https://material.io/design/motion/the-motion-system.html#shared-axis
+
+Animação em 300ms
+
+Opção de mesmo eixo.
+
+```css
+@keyframes shared-axis-out {
+  0% {
+    opacity: 1;
+  }
+  15% {
+    transform: translateX(0);
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(30dp);
+  }
+}
+
+@keyframes shared-axis-in {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    transform: translateX(30dp);
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+```
+
+## Transições
+
+### Transições com relação
+
+A troca do conteúdo ser feita com fade out e fade in. O efeito precisa tanto de opacidade como um efeito de expansão.
+
+## Transformação
+
+No meio da transição, com a opacidade zero trocar o conteúdo.
+
+Evitar mudar o formato da forma, apenas o conteúdo.
