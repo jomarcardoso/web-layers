@@ -32,6 +32,12 @@ Feito com sticky com left ou top 0.
 
 ## Animações de entrada e saída
 
+### Coexistência proibida
+
+Quando um está em tela o outro deixa de existir.
+
+### No mesmo eixo
+
 Para não mostrar o conteúdo se formando pode-se usar um loader e renderizar o conteúdo, após isso fazer o efeito de fade com um translate em todos os elementos.
 
 Referências:
