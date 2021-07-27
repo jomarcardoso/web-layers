@@ -6,11 +6,30 @@ Grandes empresas, que possuem seus produtos multi plataforma, criam produtos dif
 
 ## Expressivo X Produtivo
 
+A curva padrão é quando um elemento está visível do começo ao fim da animação.
+
+A curva de entrada é quando ele aparece na tela e de saída quando sai da tela.
+
 ### Motion Carbon
 
 ```css
---standard-easing-productive: cubic-bezier(0.2, 0, 0.38, 0.9);
---standard-easing-expressive: cubic-bezier(0.4, 0.14, 0.3, 1);
+:root {
+  --standard-easing-productive: cubic-bezier(0.2, 0, 0.38, 0.9);
+  --standard-easing-expressive: cubic-bezier(0.4, 0.14, 0.3, 1);
+
+  --entrance-easing-productive: cubic-bezier(0, 0, 0.38, 0.9);
+  --entrance-easing-expressive: cubic-bezier(0, 0, 0.3, 1);
+
+  --exit-easing-productive: cubic-bezier(0.2, 0, 1, 0.9);
+  --exit-easing-expressive: cubic-bezier(0.4, 0.14, 1, 1);
+
+  --duration--fast-01: 70ms;	/* Micro-interactions such as button and toggle */
+  --duration--fast-02:	110ms;	/* Micro-interactions such as fade */
+  --duration--moderate-01:	150ms;	/* Micro-interactions, small expansion, short distance movements */
+  --duration--moderate-02:	240ms;	/* Expansion, system communication, toast */
+  --duration--slow-01:	400ms; /* Large expansion, important system notifications */
+  --duration--slow-02:	700ms; /* Background dimming */
+}
 ```
 
 ## Camadas
