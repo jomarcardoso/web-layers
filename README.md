@@ -20,9 +20,13 @@ Painéis são elementos que ocupam a tela toda.
 
 ### Painéis de rolagem
 
+Exemplo Instagram
+
 ### Painéis de rolagem com paralaxe
 
 ### Painéis de sobreposição
+
+Feito com sticky com left ou top 0.
 
 ## Placeholders
 
