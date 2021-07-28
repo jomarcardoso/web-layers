@@ -23,6 +23,7 @@ Uso excessivo do [will-change](https://developer.mozilla.org/pt-BR/docs/Web/CSS/
 - Distância: 100ms para cada 10% da tela
 - Complexidade 2-5 elementos: 300-400ms
 - Complexidade 6-10 elementos: 500-700ms
+- Tamanho da tela*
 
 **IBM Carbon**
 
