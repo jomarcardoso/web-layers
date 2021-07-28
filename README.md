@@ -66,11 +66,11 @@ A curva de entrada é de desaceleração e é usado quando o elemento aparece na
   --easing-standard-productive: cubic-bezier(0.2, 0, 0.38, 0.9);
   --easing-standard-expressive: cubic-bezier(0.4, 0.14, 0.3, 1);
 
-  --easing-entrance-productive: cubic-bezier(0, 0, 0.38, 0.9);
-  --easing-entrance-expressive: cubic-bezier(0, 0, 0.3, 1);
+  --easing-entrance-productive: cubic-bezier(0, 0, 0.38, 0.9); /* ease-in */
+  --easing-entrance-expressive: cubic-bezier(0, 0, 0.3, 1); /* ease-in */
 
-  --easing-exit-productive: cubic-bezier(0.2, 0, 1, 0.9);
-  --easing-exit-expressive: cubic-bezier(0.4, 0.14, 1, 1);
+  --easing-exit-productive: cubic-bezier(0.2, 0, 1, 0.9); /* ease-out */
+  --easing-exit-expressive: cubic-bezier(0.4, 0.14, 1, 1); /* ease-out */
 }
 ```
 
@@ -79,8 +79,8 @@ A curva de entrada é de desaceleração e é usado quando o elemento aparece na
 ```css
 :root {
   --easing-standard: cubic-bezier(0.4, 0, 0.2, 1);
-  --easing-desacelerated: cubic-bezier(0, 0, 0.2, 1);
-  --easing-accelerated: cubic-bezier(0.4, 0, 1, 1);
+  --easing-desacelerated: cubic-bezier(0, 0, 0.2, 1); /* ease-in */
+  --easing-accelerated: cubic-bezier(0.4, 0, 1, 1); /* ease-out */
 }
 ```
 
