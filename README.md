@@ -182,3 +182,5 @@ Evitar mudar o formato da forma, apenas o conteúdo.
 - https://ibm.github.io/motion/
 - https://www.designsystems.com/5-steps-for-including-motion-design-in-your-system/
 - https://uxdesign.cc/the-ultimate-guide-to-proper-use-of-animation-in-ux-10bd98614fa9
+- https://medium.com/design-ibm/working-together-ux-motion-specs-for-design-and-development-249b12d60909
+- https://hackernoon.com/using-animationmotion-design-tokens-for-more-complex-and-sophisticated-design-zy3t33y5
