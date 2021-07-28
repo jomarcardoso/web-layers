@@ -16,13 +16,44 @@ Permitir parar pela metade uma animação de um conteúdo a ser lido.
 
 Uso excessivo do [will-change](https://developer.mozilla.org/pt-BR/docs/Web/CSS/will-change) como solução para o uso de propriedades que recalculam a página, como `padding`, `top`, `left`... Pois além de não resolver deixa a página mais pesada e com mais uso de memória.
 
-## Expressivo X Produtivo
+## Duração
+
+**IBM Carbon**
+
+```css
+:root {
+  --duration--fast-01: 70ms; /* Micro-interactions such as button and toggle */
+  --duration--fast-02: 110ms; /* Micro-interactions such as fade */
+  --duration--moderate-01: 150ms; /* Micro-interactions, small expansion, short distance movements */
+  --duration--moderate-02: 240ms; /* Expansion, system communication, toast */
+  --duration--slow-01: 400ms; /* Large expansion, important system notifications */
+  --duration--slow-02: 700ms; /* Background dimming */
+}
+```
+
+**Material Design**
+
+```css
+:root {
+  --duration-open: 250ms; /* or expand */
+  --duration-close: 200ms; /* or collapse */
+  --duration-open-large: 300ms; /* or expand large */
+  --duration-close-large: 250ms; /* or collapse large */
+  --duration-switch: 100ms;
+}
+```
+
+### Expressivo X Produtivo
+
+Menos de 200ms é produtivo, acima disso é expressivo, ou seja, para puxar a atenção do usuário.
+
+## Curvas
 
 A curva padrão é quando um elemento está visível do começo ao fim da animação.
 
-A curva de entrada é quando ele aparece na tela e de saída quando sai da tela.
+A curva de entrada é de desaceleração e é usado quando o elemento aparece na tela e de saída, de aceleração, quando sai da tela.
 
-### Motion Carbon
+**IBM Carbon**
 
 ```css
 :root {
@@ -34,29 +65,16 @@ A curva de entrada é quando ele aparece na tela e de saída quando sai da tela.
 
   --easing-exit-productive: cubic-bezier(0.2, 0, 1, 0.9);
   --easing-exit-expressive: cubic-bezier(0.4, 0.14, 1, 1);
-
-  --duration--fast-01: 70ms; /* Micro-interactions such as button and toggle */
-  --duration--fast-02: 110ms; /* Micro-interactions such as fade */
-  --duration--moderate-01: 150ms; /* Micro-interactions, small expansion, short distance movements */
-  --duration--moderate-02: 240ms; /* Expansion, system communication, toast */
-  --duration--slow-01: 400ms; /* Large expansion, important system notifications */
-  --duration--slow-02: 700ms; /* Background dimming */
 }
 ```
 
-### Material Design
+**Material Design**
 
 ```css
 :root {
-  --easing-standard: cubic-bezier(0.4, 0.0, 0.2, 1);
-  --easing-desacelerated: cubic-bezier(0.0, 0.0, 0.2, 1);
-  --easing-accelerated: cubic-bezier(0.4, 0.0, 1, 1);
-  
-  --duration-open: 250ms; /* or expand */
-  --duration-close: 200ms; /* or collapse */
-  --duration-open-large: 300ms; /* or expand large */
-  --duration-close-large: 250ms; /* or collapse large */
-  --duration-switch: 100ms;
+  --easing-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --easing-desacelerated: cubic-bezier(0, 0, 0.2, 1);
+  --easing-accelerated: cubic-bezier(0.4, 0, 1, 1);
 }
 ```
 
