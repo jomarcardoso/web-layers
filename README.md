@@ -174,3 +174,4 @@ Evitar mudar o formato da forma, apenas o conteúdo.
 - https://material.io/design/shape/shape-motion.html#morphing-shape
 - https://www.carbondesignsystem.com/guidelines/motion/overview/
 - https://ibm.github.io/motion/
+- https://www.designsystems.com/5-steps-for-including-motion-design-in-your-system/
