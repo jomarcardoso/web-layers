@@ -181,3 +181,4 @@ Evitar mudar o formato da forma, apenas o conteúdo.
 - https://www.carbondesignsystem.com/guidelines/motion/overview/
 - https://ibm.github.io/motion/
 - https://www.designsystems.com/5-steps-for-including-motion-design-in-your-system/
+- https://uxdesign.cc/the-ultimate-guide-to-proper-use-of-animation-in-ux-10bd98614fa9
