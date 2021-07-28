@@ -54,11 +54,22 @@ Uso excessivo do [will-change](https://developer.mozilla.org/pt-BR/docs/Web/CSS/
 
 Menos de 200ms é produtivo, acima disso é expressivo, ou seja, para puxar a atenção do usuário.
 
+### Media queries
+
+Quanto menor a tela, menos espaço para percorrer. Exceção o PC que na Web o normal é não ter animações, então se forem lentas dão a sensação que o computador está ruim.
+
+- Vestíveis: 150-200ms
+- Celular: 200-300ms
+- Tablet: 400-450ms
+- PC: 150-200ms
+
 ## Curvas
 
-A curva padrão é quando um elemento está visível do começo ao fim da animação.
+Deixam os movimetos mais naturais aos nossos olhos.
 
-A curva de entrada é de desaceleração e é usado quando o elemento aparece na tela e de saída, de aceleração, quando sai da tela.
+A curva padrão é quando um elemento está visível do começo ao fim da animação, ou quando sai da tela e tem a possibilidade de voltar
+
+A curva de entrada é de desaceleração e é usado quando o elemento aparece na tela e de saída, de aceleração, quando sai da tela e nunca mais volta.
 
 **IBM Carbon**
 
@@ -67,11 +78,11 @@ A curva de entrada é de desaceleração e é usado quando o elemento aparece na
   --easing-standard-productive: cubic-bezier(0.2, 0, 0.38, 0.9);
   --easing-standard-expressive: cubic-bezier(0.4, 0.14, 0.3, 1);
 
-  --easing-entrance-productive: cubic-bezier(0, 0, 0.38, 0.9); /* ease-in */
-  --easing-entrance-expressive: cubic-bezier(0, 0, 0.3, 1); /* ease-in */
+  --easing-entrance-productive: cubic-bezier(0, 0, 0.38, 0.9); /* ease-out */
+  --easing-entrance-expressive: cubic-bezier(0, 0, 0.3, 1); /* ease-out */
 
-  --easing-exit-productive: cubic-bezier(0.2, 0, 1, 0.9); /* ease-out */
-  --easing-exit-expressive: cubic-bezier(0.4, 0.14, 1, 1); /* ease-out */
+  --easing-exit-productive: cubic-bezier(0.2, 0, 1, 0.9); /* ease-in */
+  --easing-exit-expressive: cubic-bezier(0.4, 0.14, 1, 1); /* ease-in */
 }
 ```
 
@@ -80,8 +91,8 @@ A curva de entrada é de desaceleração e é usado quando o elemento aparece na
 ```css
 :root {
   --easing-standard: cubic-bezier(0.4, 0, 0.2, 1);
-  --easing-desacelerated: cubic-bezier(0, 0, 0.2, 1); /* ease-in */
-  --easing-accelerated: cubic-bezier(0.4, 0, 1, 1); /* ease-out */
+  --easing-desacelerated: cubic-bezier(0, 0, 0.2, 1); /* ease-out */
+  --easing-accelerated: cubic-bezier(0.4, 0, 1, 1); /* ease-in */
 }
 ```
 
@@ -112,6 +123,8 @@ Feito com sticky com left ou top 0.
 ## Placeholders
 
 ## Animações de entrada e saída
+
+A coreografia deve ter uma direção natural, sem zigue zague, ou seja, se eslementos tornarem-se visíveis, precisa ser em linha, essa pode ser diagonal.
 
 ### Coexistência proibida
 
@@ -174,6 +187,12 @@ No meio da transição, com a opacidade zero trocar o conteúdo.
 
 Evitar mudar o formato da forma, apenas o conteúdo.
 
+## Tokens
+
+Componentes:
+- drawer
+- action
+
 ## Referências
 
 - https://angular.io/guide/animations
@@ -185,3 +204,4 @@ Evitar mudar o formato da forma, apenas o conteúdo.
 - https://uxdesign.cc/the-ultimate-guide-to-proper-use-of-animation-in-ux-10bd98614fa9
 - https://medium.com/design-ibm/working-together-ux-motion-specs-for-design-and-development-249b12d60909
 - https://hackernoon.com/using-animationmotion-design-tokens-for-more-complex-and-sophisticated-design-zy3t33y5
+- https://easings.net/
