@@ -30,20 +30,6 @@
       scroll-snap-stop: always;
       display: flex;
       flex-direction: column;
-      position: relative;
-    }
-
-    .panel-helper {
-      scroll-snap-align: start;
-      scroll-snap-stop: always;
-      /* width: 100vw; */
-      flex-shrink: 0;
-    }
-
-    .home {
-      left: 0;
-      right: 0;
-      position: sticky;
     }
 
     .panel__content {
@@ -127,7 +113,6 @@
       flex-direction: column;
       padding: 30px;
       justify-content: space-between;
-      z-index: 1;
     }
 
     .camera-footer {
@@ -165,12 +150,11 @@
 
 <body>
   <div class="display d-flex">
-    <div id="camera"></div>
-    <div class="panel camera bg-dark h-100">
+    <div id="camera" class="panel camera bg-dark h-100">
       <div class="camera-header">
         <div>
-          <a href="#before-home">
-            <i class="text-white bi bi-x"></i>
+          <a href="#home">
+            <i class="text-primary bi bi-x"></i>
           </a>
         </div>
       </div>
@@ -180,8 +164,7 @@
         </div>
       </div>
     </div>
-    <div id="before-home" class="panel-helper"></div>
-    <div id="home" class="home panel h-100">
+    <div id="home" class="panel h-100">
       <header
         class="navbar navbar-light bg-light border border-top-0 border-left-0 border-right-0 fs-1">
         <div class="container">
@@ -312,7 +295,7 @@
       <header
         class="navbar navbar-light bg-light border border-top-0 border-left-0 border-right-0 fs-1">
         <div class="container">
-          <a href="#before-home">
+          <a href="#home">
             <i class="bi bi-arrow-left text-primary"></i>
           </a>
           <span class="fs-2">Your chat</span>
