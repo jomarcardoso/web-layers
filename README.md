@@ -23,7 +23,7 @@ Uso excessivo do [will-change](https://developer.mozilla.org/pt-BR/docs/Web/CSS/
 - Distância: 100ms para cada 10% da tela
 - Complexidade 2-5 elementos: 300-400ms
 - Complexidade 6-10 elementos: 500-700ms
-- Tamanho da tela*
+- Tamanho da tela\*
 
 **IBM Carbon**
 
@@ -187,11 +187,21 @@ No meio da transição, com a opacidade zero trocar o conteúdo.
 
 Evitar mudar o formato da forma, apenas o conteúdo.
 
+### Troca de conteúdo
+
+A troca de conteúdo deve ser feita setando o valor inicial e final do container. O valor inicial é o conteúdo atual e o final é o conteúdo que irá aparecer no local, para saber esse tamanho precisa pré renderizar e manter escondido esse conteúdo.
+
 ## Tokens
 
 Componentes:
+
 - drawer
 - action
+
+## Outros
+
+- Animações com svg
+- Angular animations
 
 ## Referências
 
